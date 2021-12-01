@@ -1,0 +1,79 @@
+.cuadradoPrueba{
+    position: absolute;
+    /*top: 30vw;*/
+    /*left: 47vw;*/
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    /*background-color: blue;*/
+    
+    background-image:url(../img/nave/nave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bomba_explosion{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image:url(../img/bomba/Explosion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: explosionAnimacion;
+    animation-duration: 0.7s;
+}
+.bomba{
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    background-image:url(../img/bomba/rocket.png);
+    transform:rotate(150deg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bala{
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagenBalaHaciaDerecha{
+    transform:rotate(150deg); 
+    background-image:url(../img/bomba/bala.png);
+}
+.imagenBalaHaciaIzquierda{
+    transform:rotate(50deg); 
+    background-image:url(../img/bomba/bala.png);
+}
+
+
+.humano{
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.policia{
+    position: absolute;
+    width: 45px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@keyframes explosionAnimacion {
+    0%   {transform: scale(2, 2);}
+    10% {transform: scale(0.5, 0.5);}
+    25%   {transform: scale(2, 2);}
+    40% {transform: scale(0.5, 0.5);}
+    60% {transform: scale(1, 1);}
+    70%   {transform: scale(2, 2);}
+    80% {transform: scale(0.4, 0.4);}
+    90%   {transform: scale(1, );}
+    100% {transform: scale(0, 0);}
+  }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet" href="../css/mainStyle.css">
+    <link rel="stylesheet" href="../css/estiloTextoInformativo.css">
+    <link rel="stylesheet" href="../css/estilosElementosPantalla.css">
+    <script defer src="../script/variablesGlobales.js"></script>
+    <script defer src="../script/movimientoTeclas.js"></script>
+    <script defer src="../script/interaccionBombas.js"></script>
+    <script defer src="../script/interaccionHumanos.js"></script>
+    <script defer src="../script/informacionPantalla.js"></script>
+    <script defer src="../script/utils.js"></script>
+    <title>Flappy</title>
+</head>
+<body>
+    <div class="botones">
+        <h1>Opciones</h1>
+        <button class="boton" onclick="confirm(`¿Quiere seguir jugando?`)?0:window.close(); this.blur();">
+            PAUSE
+        </button>
+        <button id="extremo" class="boton">
+            Dificultad Extrema <br>
+            Máxima Diversión    
+        </button>
+        <button id="debug" class="boton">
+            Debug <br>
+            Posición    
+        </button>
+    </div>
+    <div id="principal">
+        <div class="cabecera">
+            <h1>Puntuación: <span id="puntuacion">0</span></h1>
+            <h1 id="kills"></h1>
+            <h1 >Velocidad: x<span id="velocidad">1</span></h1>
+        </div>
+        <div class="pantalla">
+        </div>
+        <div class="footer">
+            <span id="textoVidas">Vida: </span>
+            <div id="vidas">
+            </div>
+            <h2>Estrellas <br> <span id="estrellas">1</span></h2>
+            <h2>Balas disponibles <br>x<span id="balas">2</span> <span id="balasImagen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
+        </div>
+    </div>
+    <div class="stats">
+        <p>:D</p>
+    </div>
+</body>
+</html>

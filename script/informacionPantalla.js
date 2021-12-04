@@ -21,12 +21,19 @@ function generarNave(){
 function generarBarraVida(){
     let elementoContenedor = document.getElementById("vidas");
     let divCreado;
+    let h2Creado;
     for(let i=0; i<numVida; i++){
         divCreado=document.createElement("div");
         divCreado.classList.add("vida");
         divCreado.classList.add("vidaStandard");
         divCreado.innerHTML="&nbsp;";
         elementoContenedor.append(divCreado);
+        if(i==numVida/2){
+            h2Creado=document.createElement("p");
+            h2Creado.innerHTML="HP";
+            h2Creado.classList.add("hp");
+            divCreado.append(h2Creado);
+        }
         if(i==numVida-1){
             divCreado.classList.add("ultimaVida");
         }else if(i==0){
@@ -84,16 +91,16 @@ function tripleKillAndSo(kills){
             textoEnPantalla.className="kill";
             break;
         case 2:
-            textoEnPantalla.innerText="DOUBLE Kill!";
+            textoEnPantalla.innerText="Double Kill!";
             textoEnPantalla.className="dobleKill";
             break;
         case 3:
-            textoEnPantalla.innerText="TRIPLE KILL!!!";
+            textoEnPantalla.innerText="TRIPLE KILL!";
             textoEnPantalla.className="tripleKill";
             aumentoVelocidad();
             break;
         case 4:
-            textoEnPantalla.innerText="CUADRAAAAAAA KILL!!!";
+            textoEnPantalla.innerText="¡CUADRA KILL!";
             textoEnPantalla.className="cuadraKill";
             aumentoVelocidad();
             aumentarBalasDisponibles();
@@ -125,7 +132,7 @@ function disminuirPuntuacion(){
     let textoEnPantalla = document.getElementById("kills");
     let puntuacionSpan = document.getElementById("puntuacion");
     let puntuacionNumero = parseInt(puntuacionSpan.innerText);
-    textoEnPantalla.innerText="Escapado :(";
+    textoEnPantalla.innerText="Escapado";
     textoEnPantalla.className="escapado";
     disminuirVida();
     puntuacionSpan.innerText=puntuacionNumero-Number(50);   

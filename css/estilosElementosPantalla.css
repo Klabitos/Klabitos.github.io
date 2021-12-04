@@ -1,11 +1,8 @@
 .cuadradoPrueba{
     position: absolute;
-    /*top: 30vw;*/
-    /*left: 47vw;*/
     z-index: 2;
     width: 100px;
     height: 100px;
-    /*background-color: blue;*/
     
     background-image:url(../img/nave/nave.png);
     background-repeat: no-repeat;

@@ -1,21 +1,21 @@
 /*   Combo kills   */
 .kill{
-    color: royalblue;
+    color: white;
 }
 .dobleKill{
-    color: yellowgreen;
+    color: #5bc0be;
     text-shadow: black 0 -1px;
-    text-decoration: underline;
 }
 .tripleKill{
-    text-shadow: red 0 -2px;
+    color: whitesmoke;
+    text-shadow: #0b132b 0 -2px;
 }
 .cuadraKill{
     text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;
-    font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;
+    font: Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;
 }
 .escapado{
-    color: red;
+    color: #a2d1d0;
     font-style:italic;
 }
 /*   Visual Imagenes Informativas   */
@@ -27,27 +27,12 @@
     background-size: cover;
 }
 /*   Vidas   */
-#textoVidas{
-    background-color: goldenrod;
-    width: 5%;
-    height: 25%;
-    margin-left: 6%;
-    border: 1px solid black;
-    text-align: center;
-}
-#vidas{
-    width: 25%;
-    height: 60%;
-    margin-left: 2%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+
+
 .vida{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    height: 25%;
+    height: 80%;
     width: 1%;  
 }
 .vidaStandard{
@@ -65,17 +50,30 @@
 
 .parrafoTutorial{
     position: relative;
-    background-color: goldenrod;
-    opacity: 0.6;
-    width: 20%;
+    background-color: #1c2541;
+    opacity: 0.8;
+    width: 40%;
     height: 35%;
     margin-top: 10%;
-    margin-left: 40%;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid black;
     text-align: center;
     overflow-y: auto;
+    box-shadow: 4px 4px black;
+    text-shadow: 2px 2px black;
 }
 
 .azul{
-    color: blue;
+    color: #5cb0be;
+}
+
+.stats p{
+    text-align: center;
+}
+
+.hp{
+    position: relative;
+    top: -50%;
+    font-weight: bold;
 }
